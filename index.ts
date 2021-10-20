@@ -53,6 +53,7 @@ class Car {
     }
 }
 
+
 const UI = {
     modelInput: document.getElementById("model") as HTMLInputElement,
     dateInput: document.getElementById("date") as HTMLInputElement,
@@ -194,6 +195,14 @@ function hybridCars() {
 
 const CARS_LOCAL_STORAGE_KEY = "cars";
 
+// funkcija objektu saugojimui lokalioje atmintyje (local storage)
+function saveCarsinStorage(): void {
+    const carString = JSON.stringify(cars);
+    window.localStorage.setItem('CARS_LOCAL_STORAGE_KEY', carString)
+    console.log("CAR");
+    
+}
+
 //uzkrauna objektu sarasa is Local Storage
 function loadCars(): void {
     const p = window.localStorage.getItem(CARS_LOCAL_STORAGE_KEY);
@@ -203,18 +212,12 @@ function loadCars(): void {
 
     const carsNoMethods: CarI[] = JSON.parse(p);
     for (const car of carsNoMethods) {
-        const newCar = new Car(car.model, car.date, car.color, car.fuel);
+        const newCar = new Car(car.model, car.date, car.color, car.fuel, car.id);
 
         cars.push(newCar);
-        //console.log("NAUJAS AUTO", newCar);
+        console.log("NAUJAS AUTO", newCar);
     }
     display();
-}
-
-// funkcija objektu saugojimui lokalioje atmintyje (local storage)
-function saveCarsinStorage(): void {
-    const carObject = JSON.stringify(cars);
-    window.localStorage.setItem('CARS_LOCAL_STORAGE_KEY', carObject)
 }
 
 loadCars();
