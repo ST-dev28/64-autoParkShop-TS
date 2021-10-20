@@ -56,7 +56,7 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   /*background-color: $greenBg;*/
-  background-image: url(/img/lexus.jpg);
+  background-image: url(https://plsadaptive.s3.amazonaws.com/eco/images/channel_content/images/mercedes-vision-avtr.jpg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
