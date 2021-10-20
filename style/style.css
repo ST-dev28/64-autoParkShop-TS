@@ -173,6 +173,7 @@ body .right-part #params {
   padding: 12px;
   margin-bottom: 2px;
   line-height: 24px;
+  text-align: center;
 }
 
 body .right-part .card-title .controls,
