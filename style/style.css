@@ -55,7 +55,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
-  background-color: #5acfc6;
+  /*background-color: $greenBg;*/
   background-image: url(/img/lexus.jpg);
   background-size: cover;
   display: -webkit-box;
