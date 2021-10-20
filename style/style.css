@@ -55,8 +55,9 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
-  background-color: #5acfc6;
-  background-image: url(/img/lexus.jpg);
+  /*background-color: $greenBg;*/
+  background-color: #3e3f3f;
+  background-image: url(../img/lexus.jpg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,49 +362,49 @@ body .right-part .list {
 
 @-webkit-keyframes slideBG {
   0% {
-    background-image: url(/img/road1.jpeg);
+    background-image: url(../img/road1.jpeg);
   }
   15% {
-    background-image: url(/img/mercedes.jpg);
+    background-image: url(../img/mercedes.jpg);
   }
   30% {
-    background-image: url(/img/audi.jpg);
+    background-image: url(../img/audi.jpg);
   }
   45% {
-    background-image: url(/img/bmw.jpg);
+    background-image: url(../img/bmw.jpg);
   }
   60% {
-    background-image: url(/img/jaguar.jpg);
+    background-image: url(../img/jaguar.jpg);
   }
   75% {
-    background-image: url(/img/lexus.jpg);
+    background-image: url(../img/lexus.jpg);
   }
   100% {
-    background-image: url(/img/aero.jpg);
+    background-image: url(../img/aero.jpg);
   }
 }
 
 @keyframes slideBG {
   0% {
-    background-image: url(/img/road1.jpeg);
+    background-image: url(../img/road1.jpeg);
   }
   15% {
-    background-image: url(/img/mercedes.jpg);
+    background-image: url(../img/mercedes.jpg);
   }
   30% {
-    background-image: url(/img/audi.jpg);
+    background-image: url(../img/audi.jpg);
   }
   45% {
-    background-image: url(/img/bmw.jpg);
+    background-image: url(../img/bmw.jpg);
   }
   60% {
-    background-image: url(/img/jaguar.jpg);
+    background-image: url(../img/jaguar.jpg);
   }
   75% {
-    background-image: url(/img/lexus.jpg);
+    background-image: url(../img/lexus.jpg);
   }
   100% {
-    background-image: url(/img/aero.jpg);
+    background-image: url(../img/aero.jpg);
   }
 }
 /*# sourceMappingURL=style.css.map */
