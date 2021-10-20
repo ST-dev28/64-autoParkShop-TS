@@ -133,19 +133,21 @@ function hybridCars() {
     display(FuelType.Hibridas);
 }
 const CARS_LOCAL_STORAGE_KEY = "cars";
+function saveCarsinStorage() {
+    const carString = JSON.stringify(cars);
+    window.localStorage.setItem('CARS_LOCAL_STORAGE_KEY', carString);
+    console.log("CAR");
+}
 function loadCars() {
     const p = window.localStorage.getItem(CARS_LOCAL_STORAGE_KEY);
     if (!p)
         return;
     const carsNoMethods = JSON.parse(p);
     for (const car of carsNoMethods) {
-        const newCar = new Car(car.model, car.date, car.color, car.fuel);
+        const newCar = new Car(car.model, car.date, car.color, car.fuel, car.id);
         cars.push(newCar);
+        console.log("NAUJAS AUTO", newCar);
     }
     display();
-}
-function saveCarsinStorage() {
-    const carObject = JSON.stringify(cars);
-    window.localStorage.setItem('CARS_LOCAL_STORAGE_KEY', carObject);
 }
 loadCars();
