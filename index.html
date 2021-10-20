@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Shop</title>
+    <link href="./style/style.css" type="text/css" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="left-part" id="add_car">
+        <form>
+            <input type="text" id="model" placeholder="Modelis">
+            <input type="date" id="date" placeholder="Pagaminimo data" onclick="this.type='date'" onblur="(this.type='text')">
+            <input type="text" id="color" placeholder="Spalva">
+            <select name="fuel" class="fuel" id="fuel">
+                <option id="kuras" value="Kuras">Kuro tipas</option>
+                <option value="0">Benzinas</option>
+                <option value="1">Dyzelinas</option>
+                <option value="2">Hibridas</option>
+            </select>
+            <button id="save" type="button">Pridėti</button>
+        </form>
+    </div>
+
+    <!--forma HIDE informacijos atnaujinimui-->
+    <div class="left-part hide" id="update_car">
+        <form>
+            <input type="text" id="model-upd" placeholder="Modelis">
+            <input type="date" id="date-upd" placeholder="Pagaminimo data" onclick="this.type='date'" onblur="(this.type='text')">
+            <input type="text" id="color-upd" placeholder="Spalva">
+            <select name="fuel" class="fuel" id="fuel-upd">
+                <option id="kuras" value="Kuras">Kuro tipas</option>
+                <option value="0">Benzinas</option>
+                <option value="1">Dyzelinas</option>
+                <option value="2">Hibridas</option>
+            </select>
+            <button id="update" type="button" onclick="onSave()">Atnaujinti</button>
+        </form>
+    </div>
+
+    <div class="right-part">
+        <div class="filter">
+            <button id="auto" type="button" onclick="allCars()">Visi automobiliai</button>
+            <button id="auto" type="button" onclick="dieselCars()">Dyzeliniai automobiliai</button>
+            <button id="auto" type="button" onclick="gasCars()">Benzininiai automobiliai</button>
+            <button id="auto" type="button" onclick="hybridCars()">Hibridiniai automobiliai</button>
+        </div>
+        <div class="card-title">
+            <div>Modelis</div>
+            <div>Pagaminimo data</div>
+            <div>Spalva</div>
+            <div>Kuro tipas</div>
+            <div class="controls"></div>
+        </div>
+        <div class="list">
+
+            <!--<div id="params">
+                <div>Audi 100</div>
+                <div>2017 01 01</div>
+                <div>Juoda</div>
+                <div>Dyzelinas</div>
+                <div class="controls">
+                    <img class="icon edit" src="https://cdn-icons-png.flaticon.com/512/4277/4277132.png">
+                    <img class="icon delete" src="https://cdn-icons-png.flaticon.com/512/1617/1617543.png">
+                </div>
+            </div>-->
+
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+</html>
