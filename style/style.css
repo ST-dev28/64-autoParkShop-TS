@@ -56,8 +56,8 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   /*background-color: $greenBg;*/
-  background-color: #3e3f3f;
-  background-image: url(../img/lexus.jpg);
+  /*background-color: rgb(62, 63, 63);*/
+  background-image: url(../img/mercedes.jpg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
